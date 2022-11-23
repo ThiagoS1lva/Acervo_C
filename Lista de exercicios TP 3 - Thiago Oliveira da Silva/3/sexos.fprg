@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Thunder"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-15 03:07:18 "/>
+        <attribute name="created" value="VGh1bmRlcjtUSElBR087MjAyMS0wMy0xNTsiMDI6NDY6MjkgIjsyMzY2"/>
+        <attribute name="edited" value="VGh1bmRlcjtUSElBR087MjAyMS0wMy0xNTsiMDM6MDc6MTggIjsyOzI0NzE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sex" type="String" array="False" size=""/>
+            <output expression="&quot;Digite seu sexo:&quot;" newline="True"/>
+            <input variable="sex"/>
+            <if expression="sex = &quot;f&quot; || sex = &quot;F&quot;">
+                <then>
+                    <output expression="&quot;Sexo feminino&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="sex = &quot;m&quot; || sex = &quot;M&quot;">
+                        <then>
+                            <output expression="&quot;Sexo masculino&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Sexo indefinido&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

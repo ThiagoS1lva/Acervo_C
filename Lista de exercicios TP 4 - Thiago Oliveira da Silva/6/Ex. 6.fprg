@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Thunder"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-22 01:56:11 "/>
+        <attribute name="created" value="VGh1bmRlcjtUSElBR087MjAyMS0wMy0yMjsiMDE6NTE6MTIgIjsyMzUx"/>
+        <attribute name="edited" value="VGh1bmRlcjtUSElBR087MjAyMS0wMy0yMjsiMDE6NTY6MTEgIjsxOzI0NjM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="c, d" type="Integer" array="False" size=""/>
+            <assign variable="c" expression="0"/>
+            <assign variable="d" expression="0"/>
+            <while expression="c &lt; 1000">
+                <if expression="c%5 = 0 || c % 3 = 0">
+                    <then>
+                        <assign variable="d" expression="d  + C"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="c" expression="c + 1"/>
+            </while>
+            <output expression="&quot;A soma de todos os multiplos de 5 e 3 &#233;&quot;" newline="True"/>
+            <output expression="d" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

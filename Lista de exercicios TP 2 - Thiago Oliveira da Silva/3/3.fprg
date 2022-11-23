@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Thunder"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-08 09:41:04 "/>
+        <attribute name="created" value="VGh1bmRlcjtUSElBR087MjAyMS0wMy0wODsiMDk6MjQ6NDEgIjsyMzY1"/>
+        <attribute name="edited" value="VGh1bmRlcjtUSElBR087MjAyMS0wMy0wODsiMDk6NDE6MDQgIjsxOzI0NzE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="salario, reajuste, final" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite seu sal&#225;rio mensal:&quot;" newline="True"/>
+            <input variable="salario"/>
+            <output expression="&quot;Digite o percentual de reajuste de seu salario:&quot;" newline="True"/>
+            <input variable="reajuste"/>
+            <assign variable="final" expression="salario + salario * (reajuste / 100)"/>
+            <output expression="&quot;O seu novo salario &#233;: &quot;" newline="True"/>
+            <output expression="final" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

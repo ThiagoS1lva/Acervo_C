@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Thunder"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-15 02:43:28 "/>
+        <attribute name="created" value="VGh1bmRlcjtUSElBR087MjAyMS0wMy0xNTsiMDI6NDA6NTYgIjsyMzYw"/>
+        <attribute name="edited" value="VGh1bmRlcjtUSElBR087MjAyMS0wMy0xNTsiMDI6NDM6MjggIjsxOzI0NzA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="valor" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite um n&#250;mero:&quot;" newline="True"/>
+            <input variable="valor"/>
+            <if expression="valor &gt; 0">
+                <then>
+                    <output expression="&quot;N&#250;mero positivo&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;N&#250;mero negativo&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

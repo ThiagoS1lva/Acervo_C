@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Thunder"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-15 03:26:32 "/>
+        <attribute name="created" value="VGh1bmRlcjtUSElBR087MjAyMS0wMy0xNTsiMDI6NDY6MjkgIjsyMzY2"/>
+        <attribute name="edited" value="VGh1bmRlcjtUSElBR087MjAyMS0wMy0xNTsiMDM6MjY6MzIgIjs0OzI0NzA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ano" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o ano:&quot;" newline="True"/>
+            <input variable="ano"/>
+            <if expression="ano % 4 == 0 &amp;&amp; ano % 400 == 0">
+                <then>
+                    <output expression="&quot;Ano bissexto&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="ano % 100 == 0">
+                        <then>
+                            <output expression="&quot;Ano n&#227;o bissexto&quot;" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

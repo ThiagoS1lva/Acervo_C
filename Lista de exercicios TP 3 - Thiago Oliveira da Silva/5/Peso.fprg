@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Thunder"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-15 03:17:23 "/>
+        <attribute name="created" value="VGh1bmRlcjtUSElBR087MjAyMS0wMy0xNTsiMDI6NDY6MjkgIjsyMzY2"/>
+        <attribute name="edited" value="VGh1bmRlcjtUSElBR087MjAyMS0wMy0xNTsiMDM6MTc6MjMgIjszOzI0Njk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="alt, peso, ideal" type="Real" array="False" size=""/>
+            <declare name="sex" type="String" array="False" size=""/>
+            <output expression="&quot;Digite seu sexo:&quot;" newline="True"/>
+            <input variable="sex"/>
+            <output expression="&quot;Digite sua altura&quot;" newline="True"/>
+            <input variable="alt"/>
+            <output expression="&quot;Digite seu peso&quot;" newline="True"/>
+            <input variable="peso"/>
+            <if expression="sex = &quot;f&quot; || sex = &quot;F&quot;">
+                <then>
+                    <assign variable="ideal" expression="(62.1*alt) - 44.7"/>
+                </then>
+                <else>
+                    <assign variable="ideal" expression="(72.7*alt) - 58"/>
+                </else>
+            </if>
+            <if expression="peso + 1 &lt; ideal">
+                <then>
+                    <output expression="&quot;Abaixo do peso ideal&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="peso - 1 &gt; ideal">
+                        <then>
+                            <output expression="&quot;Acima do peso ideal&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="peso + 1 &gt; ideal || peso - 1 &lt; ideal">
+                                <then>
+                                    <output expression="&quot;Dentro do peso ideal&quot;" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

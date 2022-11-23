@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Thunder"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-22 01:48:43 "/>
+        <attribute name="created" value="VGh1bmRlcjtUSElBR087MjAyMS0wMy0yMjsiMDE6NDU6MDYgIjsyMzU3"/>
+        <attribute name="edited" value="VGh1bmRlcjtUSElBR087MjAyMS0wMy0yMjsiMDE6NDg6NDMgIjsxOzI0Njk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, n" type="Real" array="False" size=""/>
+            <assign variable="b" expression="0"/>
+            <for variable="n" start="1" end="10" direction="inc" step="1">
+                <output expression="&quot;Digite um n&#250;mero: &quot;" newline="True"/>
+                <input variable="a"/>
+                <assign variable="b" expression="b + a"/>
+            </for>
+            <output expression="&quot;A soma dos n&#250;meros digitados &#233;&quot;" newline="True"/>
+            <output expression="b" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

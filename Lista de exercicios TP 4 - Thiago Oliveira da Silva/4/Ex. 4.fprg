@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Thunder"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-22 01:51:08 "/>
+        <attribute name="created" value="VGh1bmRlcjtUSElBR087MjAyMS0wMy0yMjsiMDE6NDg6NDggIjsyMzY2"/>
+        <attribute name="edited" value="VGh1bmRlcjtUSElBR087MjAyMS0wMy0yMjsiMDE6NTE6MDggIjsxOzI0NjQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, n, n0" type="Integer" array="False" size=""/>
+            <assign variable="a" expression="0"/>
+            <output expression="&quot;Digite a quantidade de n&#250;meros somados: &quot;" newline="True"/>
+            <input variable="n"/>
+            <for variable="n0" start="1" end="n" direction="inc" step="1">
+                <assign variable="a" expression="a + n0"/>
+            </for>
+            <output expression="&quot;O somat&#243;rio dos n&#250;meros &#233; igual a&quot;" newline="True"/>
+            <output expression="a" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

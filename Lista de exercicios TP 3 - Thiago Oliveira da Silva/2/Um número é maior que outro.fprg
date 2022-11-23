@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Thunder"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-15 02:46:26 "/>
+        <attribute name="created" value="VGh1bmRlcjtUSElBR087MjAyMS0wMy0xNTsiMDI6NDM6MzQgIjsyMzU5"/>
+        <attribute name="edited" value="VGh1bmRlcjtUSElBR087MjAyMS0wMy0xNTsiMDI6NDY6MjYgIjsxOzI0NzE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite dois n&#250;meros:&quot;" newline="True"/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <if expression="a &gt; b">
+                <then>
+                    <output expression="a" newline="True"/>
+                    <output expression="&quot;&#233; maior que&quot;" newline="True"/>
+                    <output expression="b" newline="True"/>
+                </then>
+                <else>
+                    <output expression="b" newline="True"/>
+                    <output expression="&quot;&#233; maior que&quot;" newline="True"/>
+                    <output expression="a" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Thunder"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-15 03:30:57 "/>
+        <attribute name="created" value="VGh1bmRlcjtUSElBR087MjAyMS0wMy0xNTsiMDM6MjY6MzggIjsyMzY1"/>
+        <attribute name="edited" value="VGh1bmRlcjtUSElBR087MjAyMS0wMy0xNTsiMDM6MzA6NTcgIjsxOzI0Njk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="String" array="False" size=""/>
+            <output expression="&quot;Digite uma letra&quot;" newline="True"/>
+            <input variable="a"/>
+            <if expression="a == &quot;a&quot; || a == &quot;e&quot; || a == &quot;i&quot;|| a == &quot;o&quot; || a == &quot;u&quot;">
+                <then>
+                    <output expression="&quot;Vogal&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Consoante&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

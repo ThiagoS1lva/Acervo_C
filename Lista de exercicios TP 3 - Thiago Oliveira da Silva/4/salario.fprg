@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Thunder"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-15 03:02:45 "/>
+        <attribute name="created" value="VGh1bmRlcjtUSElBR087MjAyMS0wMy0xNTsiMDI6NDY6MjkgIjsyMzY2"/>
+        <attribute name="edited" value="VGh1bmRlcjtUSElBR087MjAyMS0wMy0xNTsiMDM6MDI6NDUgIjsxOzI0NjU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="salario, vendas" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o quanto voc&#234; vendeu:&quot;" newline="True"/>
+            <input variable="vendas"/>
+            <if expression="vendas &gt;= 1500">
+                <then>
+                    <assign variable="salario" expression="vendas * 0.05"/>
+                    <output expression="&quot;Voc&#234; ganhar&#225;:&quot;" newline="True"/>
+                    <output expression="salario" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="salario" expression="vendas * 0.03"/>
+                    <output expression="&quot;Voc&#234; ganhar&#225;:&quot;" newline="True"/>
+                    <output expression="salario" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
